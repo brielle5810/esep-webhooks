@@ -29,4 +29,8 @@ public class Function
 
         return reader.ReadToEnd();
     }
+    catch (Exception ex)
+    {
+        return $"Error processing input: {ex.Message}";
+    }
 }
